@@ -1,0 +1,28 @@
+@mixin headerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absCenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+//Media query
+
+/*
+$breakpoint argument choices:
+- desktop
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 64em) {
+      @content;
+    }
+  } // 1024 divided by 16px to have ems
+}

@@ -1,0 +1,2 @@
+(()=>{"use strict";const e=document.querySelectorAll(".observer");new IntersectionObserver((e=>{e.forEach((e=>{e.target.classList.toogle("show",e.isIntersecting)}))})),e.forEach((e=>{e.observe()}))})();
+//# sourceMappingURL=bundle.bc3b72461f18e46b.js.map

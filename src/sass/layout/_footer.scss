@@ -1,0 +1,13 @@
+@use '../base';
+@use '../abstracts';
+
+.section__contact {
+    background-color: var(--color-purple);
+    padding: 4rem 0;
+    color: var(--color-primary-white);
+  
+    &--container {
+      @include abstracts.absCenter;
+    }
+  }
+  

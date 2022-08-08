@@ -1,0 +1,51 @@
+@use "../base";
+@use "../abstracts";
+
+/* button */
+
+.button {
+  display: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.4rem 2.4rem;
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-400);
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-blue);
+  transition: all 0.2s;
+
+  @include abstracts.respond(desktop) {
+    display: inline-block;
+  }
+}
+
+.mobile-btn {
+  display: inline-block;
+  margin-left: auto;
+  @include abstracts.respond(desktop) {
+    display: none;
+  }
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: var(--color-primary-light-blue);
+}
+
+.btn-cta {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  padding: 1.6rem 7rem;
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-400);
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-blue);
+  transition: all 0.2s;
+
+  @include abstracts.respond(desktop) {
+    display: inline-block;
+  }
+}
