@@ -54,6 +54,8 @@
   &--desktop {
     display: none;
     @include abstracts.respond(desktop) {
+      width: 64rem;
+      margin: 0 auto 12rem;
       display: block;
       text-align: center;
     }
@@ -80,6 +82,7 @@
   text-align: center;
   @include abstracts.respond(desktop) {
     background-color: transparent;
+    margin-bottom: 12rem;
   }
 
   h2 {
@@ -155,4 +158,12 @@
   }
 }
 
-
+.section__about {
+  @include abstracts.respond(desktop) {
+    margin-bottom: 9rem;
+  }
+  &--contact {
+    color: var(--color-primary-blue);
+    justify-content: center;
+  }
+}
