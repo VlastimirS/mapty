@@ -28,6 +28,7 @@
   --fs-paragraph: var(--fs-400);
   --fs-testemonials: var(--fs-500);
   --fs-testemonials-names: var(--fs-300);
+  --fs-contact: var(--fs-500);
 }
 
 @media (min-width: 50em) {
@@ -38,6 +39,7 @@
     --fs-tertiary-heading: var(--fs-400-lg);
     --fs-paragraph: var(--fs-500);
     --fs-testemonials-names: var(--fs-500);
-    --fs-testemonials: var(--fs-300);
+    --fs-testemonials: var(--fs-500-lg);
+    --fs-contact: var(--fs-600);
   }
 }

@@ -28,8 +28,17 @@
               alt="Manage"
           /></a>
           <a class="font-nav button mobile-btn" href="#">Start</a>
+
+          <nav class="navigation__nav nav-desktop">
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a class="font-nav" href="#">How this works</a></li>
+              <li><a class="font-nav" href="#">About us</a></li>
+              <li><a class="font-nav" href="#">Contact us</a></li>
+              <li><a class="font-nav button" href="#">Start</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="navigation__nav">
+        <nav class="navigation__nav nav-mobile">
           <ul aria-label="Primary" role="list" class="nav-list">
             <li><a class="font-nav" href="#">How this works</a></li>
             <li><a class="font-nav" href="#">About us</a></li>
@@ -37,32 +46,32 @@
             <li><a class="font-nav button" href="#">Start</a></li>
           </ul>
         </nav>
+
+        
       </div>
     </div>
     <header class="header">
-      <div class="header__container">
-        <img class="header__image" src="./img/bg.png" alt="" />
-        <div class="header__text-box">
-          <h1 class="heading__primary font-main">
-            My Proposal Coach - here to help you test and improve your proposal,
-            bid and capture skills
-          </h1>
-          <p class="heading__secondary">
-            Whatever your role in proposals, to continually develop and hone
-            your skills, you need to understand where your strengths and
-            weaknesses are. My Proposal Coach challenges you across a full range
-            of competencies and helps you recognise areas that you should focus
-            on to keep on top of your game and improve your performance. To take
-            the 45 minute self-assessment hit start. What are you waiting for!
-          </p>
-          <a href="" class="btn-cta font-nav">Start</a>
+      <img class="header__image" src="./img/bg.png" alt="" />
+      <div class="header__container wide-container">
+        <div class="header__text-box container">
+            <h1 class="heading__primary font-main mb-md">
+              My Proposal Coach - here to help you test and improve your proposal,
+              bid and capture skills
+            </h1>
+            <p class="font-sub mb-md">
+              Whatever your role in proposals, to continually develop and hone
+              your skills, you need to understand where your strengths and
+              weaknesses are. My Proposal Coach challenges you across a full range
+              of competencies and helps you recognise areas that you should focus
+              on to keep on top of your game and improve your performance. To take
+              the 45 minute self-assessment hit start. What are you waiting for!
+            </p>
+            <a href="" class="btn-cta font-nav">Start</a>
         </div>
       </div>
     </header>
     <main>
-      <div class="grey-bg">
-
-      
+      <div class="grey-bg mb-xlg">      
       <section class="observer section__how mb-xlg">
         <div class="wide-container">
           <div class="even-columns">
@@ -90,7 +99,7 @@
 
       <section class="section__individuals observer mb-xlg"> 
         <div class="container">
-          <div class="section__individuals--desktop">
+          <div class="section__individuals--desktop mb-lg">
             <h2 class="font-sub mb-sm">Who is this designed for?</h2> 
             <p class="font-paragraph">My Proposal Coach is designed to be used by individuals working in proposals, bids and capture roles. However line managers may find the tool useful for assessing employees attributes and creating bespoke learning and development plans.</p> 
           </div>
@@ -118,8 +127,8 @@
   
             <div class="testimonials">
                 <div class="testemonials-container container">
-                  <img class="testemonials__icon--overlay img__overlay-1" src="./img/arrow-down.svg" alt="proposal" />
-                  <img class="testemonials__icon--overlay img__overlay-2" src="./img/arrow-top.svg" alt="proposal" />
+                  <img class="testemonials__icon--overlay img__overlay-1" src="./img/arrow-top.svg" alt="proposal" />
+                  <img class="testemonials__icon--overlay img__overlay-2" src="./img/arrow-down.svg" alt="proposal" />
 
                     <p class="font-testemonials mb-sm">A great way to persuade a client or prospect is to use an executive brochure. We create these for clients regularly and to give you a flavour of what they look like, we created our own Strategic Proposals version.We create these for clients regularly and to give you a flavour.</p>
                     <a class="font-testemonials-names mb-xs" href="">Darlene Steward</a>
@@ -135,10 +144,10 @@
             <div class="section__about">
               <h3 class="font-tertiary mb-xs">About us</h3>
               <p class="font-paragraph mb-md">Strategic Proposals provides expert proposal management, writing and design to support your important bids, proposals and campaigns. We can also benchmark your capabilities, deliver inspirational and award-winning training and help you enhance your proposal capabilities, including pre-written content libraries.</p>
-              <img class="section__about--icon mb-md" src="./img/image1.png" alt="individual" />
+                <img class="about__grid--images--overlap section__about--icon mb-md" src="./img/image1.png" alt="individual" />
             </div>
             <div class="section__about">
-              <img class="section__about--icon mb-md" src="./img/image.png" alt="proposal" />
+                <img class="about__grid--images--overlap section__about--icon mb-md" src="./img/image.png" alt="proposal" />
               <h3 class="section__how--heading font-tertiary mb-sm">We've delivered outstanding results for 30+ years for clients in sectors</h3>
               <p class="section__how--secondary font-paragraph mb-sm">including banking, insurance, ICT, construction, engineering and many more. With teams in the UK, US and NL, you'll be working with senior, trusted people that are highly driven, win-focused and hold the highest level of proposal certifications.</p>>
               </p>
@@ -155,14 +164,14 @@
           <div class="even-columns">
             <div class="section__about mb-xlg">
               <h3 class="font-tertiary">Call us</h3>
-              <a href="tel:+4 0800 009 6800">+4 0800 009 6800</a>
-              <span class="">to speak to one of our experts</span>
+              <a class="font-contact section__about--contact" href="tel:+4 0800 009 6800">+4 0800 009 6800</a>
+              <span class="font-contact">to speak to one of our experts</span>
             </div>
             <div class="section__about mb-xlg">
               <h3 class="section__how--heading font-tertiary">Email us</h3>
-              <a href="mailto:webmaster@example.com mb-xlg">info@strategicproposals.com</a>
+              <a class="font-contact section__about--contact" href="mailto:webmaster@example.com">info@strategicproposals.com</a>
             </div>
-            <div class="section__about">
+            <div class="section__about mb-xlg">
               <h3 class="section__how--heading font-tertiary">Follow us</h3>
               <div class="social-icons">
                 <img class="section__about--icon" src="./img/twitter.png" alt="proposal" />

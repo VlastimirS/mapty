@@ -41,14 +41,31 @@
   }
 }
 
+.nav-mobile {
+  @include abstracts.respond(desktop) {
+    display: none;
+  }
+}
+
+.nav-desktop {
+  display: none;
+  @include abstracts.respond(desktop) {
+    display: flex;
+  }
+}
+
 .font-sub {
   font-size: var(--fs-sub-heading);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
 }
 
 .font-tertiary {
   font-size: var(--fs-tertiary-heading);
   font-family: var(--ff-primary);
+}
+
+.font-contact {
+  font-size: var(--fs-contact);
 }
 
 // Margins and paddings
@@ -97,8 +114,8 @@
   gap: 1rem;
 }
 
-@media (min-width: 50em) {
-  .even-columns {
+.even-columns {
+  @include abstracts.respond(desktop) {
     grid-auto-flow: column;
     gap: 10rem;
     align-items: center;
