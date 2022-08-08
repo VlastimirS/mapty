@@ -9,6 +9,7 @@
 .font-nav {
   font-size: var(--fs-nav);
   font-family: var(--ff-primary);
+  font-weight: var(--fw-semi-bold);
 }
 
 .font-main {
@@ -20,6 +21,7 @@
 .font-paragraph {
   font-size: var(--fs-paragraph);
   font-family: var(--ff-primary);
+  line-height: 2.8rem;
 }
 
 .font-testemonials {
@@ -57,11 +59,13 @@
 .font-sub {
   font-size: var(--fs-sub-heading);
   font-family: var(--ff-primary);
+  font-weight: var(--fw-semi-bold);
 }
 
 .font-tertiary {
   font-size: var(--fs-tertiary-heading);
   font-family: var(--ff-primary);
+  font-weight: var(--fw-semi-bold);
 }
 
 .font-contact {
@@ -91,7 +95,10 @@
 
 .grey-bg {
   background-color: var(--color-grey-light-2);
-  padding-bottom: 5rem;
+  @include abstracts.respond(desktop) {
+    padding-bottom: 5rem;
+    padding-top: 7rem;
+  }
 }
 
 .wide-container {

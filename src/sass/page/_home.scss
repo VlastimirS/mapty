@@ -50,12 +50,6 @@
   }
 }
 
-.section__how {
-  &--secondary {
-    line-height: 2.4rem;
-  }
-}
-
 .section__individuals {
   &--desktop {
     display: none;
@@ -64,11 +58,20 @@
       text-align: center;
     }
   }
+
+  .section__people {
+    @include abstracts.respond(desktop) {
+      text-align: center;
+    }
+  }
   .section__people--icon {
     border-radius: 3.2rem;
     background-color: var(--color-primary-white);
     padding: 2.4rem;
     box-shadow: var(--shadow-light-2);
+    @include abstracts.respond(desktop) {
+      margin: 0 auto 1.6rem;
+    }
   }
 }
 
@@ -79,15 +82,40 @@
     background-color: transparent;
   }
 
+  h2 {
+    color: var(--color-primary-blue-dark);
+    text-transform: uppercase;
+
+    @include abstracts.respond(desktop) {
+      color: var(--color-grey-dark-1);
+      text-transform: capitalize;
+    }
+  }
+
   &-container {
     padding: 4.8rem 0;
   }
 
   .testemonials-container {
     position: relative;
+
+    .font-testemonials-names {
+      color: var(--color-primary-white);
+
+      @include abstracts.respond(desktop) {
+        color: var(--color-purple);
+      }
+    }
+    span {
+      opacity: 0.6;
+    }
+
     @include abstracts.absCenter;
     p {
-      order: unset;
+      order: 3;
+      @include abstracts.respond(desktop) {
+        order: unset;
+      }
     }
 
     @include abstracts.respond(desktop) {
@@ -127,8 +155,4 @@
   }
 }
 
-.section__about {
-  &--contact {
-    color: var(--color-primary-blue);
-  }
-}
+

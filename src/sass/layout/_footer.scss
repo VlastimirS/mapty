@@ -24,4 +24,11 @@
       }
     }
   }
+
+  .section__about {
+    &--contact {
+      color: var(--color-primary-blue);
+      justify-content: center;
+    }
+  }
 }
