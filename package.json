@@ -8,6 +8,11 @@
     "type": "git",
     "url": "#"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
